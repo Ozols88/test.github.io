@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ELEAGUE Major: Boston 2018</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./libs/calendar.css">
+	<script src="./js/calendar.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./img/logo.jpg" alt="Logo" width="100%">
+		</div>
+		<div class="main_menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./legends.html">Teams</a></li>
+				<li><a href="./final_standings.html">Standings</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+				<li><a href="./contacts.html">Contacts</a></li>
+				<li><a href="./about_us.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<div class="side_menu">
+				<ul>
+					<li><a href="./index.html">Home Page</a></li>
+					<li><a href="./background.html">Background</a></li>
+					<li><a href="./format.html">Format</a></li>
+					<li><a href="./broadcast_talent.html">Broadcast Talent</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<p>Counter-Strike: Global Offensive (CS:GO) is a <a href="https://en.wikipedia.org/wiki/Multiplayer_video_game" title="Multiplayer video game" target="_blank">multiplayer</a> <a href="https://en.wikipedia.org/wiki/First-person_shooter" title="First-person shooter" target="_blank">first-person shooter</a> video game developed by <a href="https://en.wikipedia.org/wiki/Hidden_Path_Entertainment" title="Hidden Path Entertainment" target="_blank">Hidden Path Entertainment</a> and <a href="https://en.wikipedia.org/wiki/Valve_Corporation" title="Valve Corporation" target="_blank">Valve Corporation</a>. It is the fourth game in the <a href="https://en.wikipedia.org/wiki/Counter-Strike" title="Counter-Strike" target="_blank"><i>Counter-Strike</i> series</a>. In competitive play, the game pits two teams against each other: the terrorists and the counter-terrorists. Both sides are tasked with eliminating the other while also completing separate objectives. The terrorists must either plant a <a href="https://en.wikipedia.org/wiki/C4_explosive" class="mw-redirect" title="C4 explosive" target="_blank">bomb</a> or kill the entire counter-terrorist team, while the counter-terrorists must either prevent the bomb from being planted by killing the entire terrorist team or defusing the bomb. At the end of each round, players are rewarded based on their individual performance with in-game currency to spend on more powerful weapons in subsequent rounds. Winning rounds results in more money than losing, and completing objectives such as killing enemy players gives cash bonuses. However, the more consecutive rounds a team loses, the more money the losing team earns; once that team wins a round, the loss round bonus resets to the minimum amount each player could earn after a round.</p><p>There are five categories of purchasable weapons, four being weapons – <a href="https://en.wikipedia.org/wiki/Rifle" title="Rifle" target="_blank">rifles</a>, <a href="https://en.wikipedia.org/wiki/Sub-machine_guns" class="mw-redirect" title="Sub-machine guns" target="_blank">sub-machine guns</a> (SMGs), heavy, <a href="https://en.wikipedia.org/wiki/Pistol" title="Pistol" target="_blank">pistols</a>, and <a href="https://en.wikipedia.org/wiki/Grenade#Grenade_types" title="Grenade" target="_blank">grenades</a> – and the fifth being utilities, which includes armor and a taser. All guns have different stats and all grenade types have different in-game effects. The <a href="https://en.wikipedia.org/wiki/Hand_grenade" class="mw-redirect" title="Hand grenade" target="_blank">hand grenade</a> deals damage in a small radius, the <a href="https://en.wikipedia.org/wiki/Smoke_grenade" title="Smoke grenade" target="_blank">smoke grenade</a> temporarily places a <a href="https://en.wikipedia.org/wiki/Smoke_screen" title="Smoke screen" target="_blank">smoke screen</a>, the decoy grenade emulates the player's primary gun, the <a href="https://en.wikipedia.org/wiki/Flashbang" class="mw-redirect" title="Flashbang" target="_blank">flashbang</a> temporarily blinds players who look at it explode, and the <a href="https://en.wikipedia.org/wiki/Molotov_cocktail" title="Molotov cocktail" target="_blank">Molotov cocktail</a> and <a href="https://en.wikipedia.org/wiki/Grenade#Incendiary" title="Grenade" target="_blank">Incendiary Grenade</a> set a small radius of the map on fire for a short period of time. Alongside all of these weapons, the Zeus x27, a <a href="https://en.wikipedia.org/wiki/Taser" title="Taser" target="_blank">taser</a>, can also be purchased.</p><p>The defending champion was <a href="https://en.wikipedia.org/wiki/Gambit_Esports" title="Gambit Esports" target="_blank">Gambit Esports</a>, which became the first Asian team and CIS team to win a major and just the second non-European team to win a major. The Swedish team <a href="https://en.wikipedia.org/wiki/Fnatic" title="Fnatic" target="_blank">Fnatic</a> won three majors to be the most decorated CS:GO team in history, the SK Gaming from Brazil coming in second with two majors.</p>
+		</div>
+		<div class="right">
+			<table id="calendar2">
+		 		<thead><tr><td>‹<td colspan="5"><td>›<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su<tbody>
+		 	</table>
+		 	<script type="text/javascript">
+				Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+				}
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+				}
+			</script>
+	 	</div>
+	 </div>
+	<footer>
+		<span>Gatis Ruskulis</span>
+		<span>D3-2</span>
+	</footer>
+</body>
+</html>

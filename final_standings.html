@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ELEAGUE Major: Boston 2018</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./libs/calendar.css">
+	<script src="./js/calendar.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./img/logo.jpg" alt="Logo" width="100%">
+		</div>
+		<div class="main_menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./legends.html">Teams</a></li>
+				<li><a href="./final_standings.html">Standings</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+				<li><a href="./contacts.html">Contacts</a></li>
+				<li><a href="./about_us.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<div class="side_menu">
+				<ul>
+					<li><a href="./challengers_stage.html">Challengers Stage</a></li>
+					<li><a href="./legends_stage.html">Legends Stage</a></li>
+					<li><a href="./champions_stage.html">Champions Stage</a></li>
+					<li><a href="./final_standings.html">Final Standings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<table class="table">
+				<tr>
+					<th>Place</th>
+					<th>$ USD</th>
+					<th>Seed</th>
+					<th>Team</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>$500,000</td>
+					<td rowspan="8">"Legend" status</td>
+					<td>Cloud9</td>
+				</tr>
+				<tr>
+					<td>2nd</td>
+					<td>$150,000</td>
+					<td>FaZe Clan</td>
+				</tr>
+				<tr>
+					<td rowspan="2">3rd-4th</td>
+					<td rowspan="2">$70,000</td>
+					<td>Natus Vincere</td>
+				</tr>
+				<tr>
+					<td>SK Gaming</td>
+				</tr>
+				<tr>
+					<td rowspan="4">5th-8th</td>
+					<td rowspan="4">$35,000</td>
+					<td>mousesports</td>
+				</tr>
+				<tr>
+					<td>Quantum Bellator Fire</td>
+				</tr>
+				<tr>
+					<td>G2 Esports</td>
+				</tr>
+				<tr>
+					<td>Fnatic</td>
+				</tr>
+				<tr>
+					<td rowspan="3">9th-11th</td>
+					<td rowspan="8">$8,750</td>
+					<td rowspan="15">-</td>
+					<td>Gambit Esports</td>
+				</tr>
+				<tr>
+					<td>Vega Squadron</td>
+				</tr>
+				<tr>
+					<td>Space Soldiers</td>
+				</tr>
+				<tr>
+					<td rowspan="3">12th-14th</td>
+					<td>BIG</td>
+				</tr>
+				<tr>
+					<td>Astralis</td>
+				</tr>
+				<tr>
+					<td>Team Liquid</td>
+				</tr>
+				<tr>
+					<td rowspan="2">15th-16th</td>
+					<td>North</td>
+				</tr>
+				<tr>
+					<td>Virtus.pro</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td rowspan="7">-</td>
+					<td>AVANGAR</td>
+				</tr>
+				<tr>
+					<td>18th</td>
+					<td>Renegades</td>
+				</tr>
+				<tr>
+					<td rowspan="3">19th-21st</td>
+					<td>Sprout</td>
+				</tr>
+				<tr>
+					<td>Team EnVyUs</td>
+				</tr>
+				<tr>
+					<td>Misfits</td>
+				</tr>
+				<tr>
+					<td rowspan="2">22nd-23rd</td>
+					<td>Flash Gaming</td>
+				</tr>
+				<tr>
+					<td>FlipSid3 Tactics</td>
+				</tr>
+			</table>
+		</div>
+		<div class="right">
+			<table id="calendar2">
+		 		<thead><tr><td>‹<td colspan="5"><td>›<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su<tbody>
+		 	</table>
+		 	<script type="text/javascript">
+				Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+				}
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+				}
+			</script>
+	 	</div>
+	 </div>
+	<footer>
+		<span>Gatis Ruskulis</span>
+		<span>D3-2</span>
+	</footer>
+</body>
+</html>

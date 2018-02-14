@@ -1,0 +1,26 @@
+#calendar2 {
+  width: 100%;
+  line-height: 1.5em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: blue;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: blue;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: yellow;
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: white;
+}
+#calendar2 tbody td.today {
+  background: green;
+  color: pink;
+}

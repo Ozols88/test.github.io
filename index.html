@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ELEAGUE Major: Boston 2018</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./libs/calendar.css">
+	<script src="./js/calendar.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./img/logo.jpg" alt="Logo" width="100%">
+		</div>
+		<div class="main_menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./legends.html">Teams</a></li>
+				<li><a href="./final_standings.html">Standings</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+				<li><a href="./contacts.html">Contacts</a></li>
+				<li><a href="./about_us.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<div class="side_menu">
+				<ul>
+					<li><a href="./index.html">Home Page</a></li>
+					<li><a href="./background.html">Background</a></li>
+					<li><a href="./format.html">Format</a></li>
+					<li><a href="./broadcast_talent.html">Broadcast Talent</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<p><b>ELEAGUE Major: Boston 2018</b>, also known as <b>ELEAGUE Major 2018</b> or <b>Boston 2018</b>, is the twelfth <i><a href="https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive" title="Counter-Strike: Global Offensive" target="_blank">Counter-Strike: Global Offensive</a></i> Major tournament and second organized by <a href="https://en.wikipedia.org/wiki/ELEAGUE" title="ELEAGUE" target="_blank">ELEAGUE</a>. The group stage was held in <a href="https://en.wikipedia.org/wiki/Atlanta" title="Atlanta" target="_blank">Atlanta</a>, <a href="https://en.wikipedia.org/wiki/Georgia_(U.S._state)" title="Georgia (U.S. state)" target="_blank">Georgia</a>, <a href="https://en.wikipedia.org/wiki/United_States" title="United States" target="_blank">United States</a> from January 12, 2018 to January 22, 2018 and the playoffs took place in <a href="https://en.wikipedia.org/wiki/Boston" title="Boston" target="_blank">Boston</a>, <a href="https://en.wikipedia.org/wiki/Massachusetts" title="Massachusetts" target="_blank">Massachusetts</a>, United States from January 26, 2018 to January 28, 2018. It featured twenty-four professional teams from around the world. All sixteen teams from last major, <a href="https://en.wikipedia.org/wiki/PGL_2017_Krak%C3%B3w_Major_Championship" title="PGL 2017 Kraków Major Championship" target="_blank">PGL 2017 Kraków Major Championship</a>, directly qualified for the major while another eight teams qualified through their respective regional qualifiers as ELEAGUE and <a href="https://en.wikipedia.org/wiki/Valve_Corporation" title="Valve Corporation" target="_blank">Valve Corporation</a> agreed to expand the major to 24 teams. ELEAGUE Major is the fifth consecutive major with a prize pool of $1,000,000. This was also the first time a CS:GO major will take place in two cities.</p><p><a href="https://en.wikipedia.org/wiki/SK_Gaming" title="SK Gaming" target="_blank">SK Gaming</a> and <a href="https://en.wikipedia.org/wiki/Fnatic" title="Fnatic" target="_blank">Fnatic</a> were the only returning Legends, as it was the fewest number of returning Legends in major history. <a href="https://en.wikipedia.org/wiki/FaZe_Clan" title="FaZe Clan" target="_blank">FaZe Clan</a>, <a href="https://en.wikipedia.org/wiki/G2_Esports" title="G2 Esports" target="_blank">G2 Esports</a>, <a href="https://en.wikipedia.org/wiki/Natus_Vincere" title="Natus Vincere" target="_blank">Natus Vincere</a>, Quantum Bellator Fire, <a href="https://en.wikipedia.org/wiki/Cloud9" title="Cloud9" target="_blank">Cloud9</a>, and <a href="https://en.wikipedia.org/wiki/Mousesports" title="Mousesports" target="_blank">mousesports</a> were new Legends. Defending champions <a href="https://en.wikipedia.org/wiki/Gambit_Esports" title="Gambit Esports" target="_blank">Gambit Esports</a>, <a href="https://en.wikipedia.org/wiki/100_Thieves" title="100 Thieves" target="_blank">100 Thieves</a> (formerly <a href="https://en.wikipedia.org/wiki/Immortals_(eSports)" title="Immortals (eSports)" target="_blank">Immortals</a>), <a href="https://en.wikipedia.org/wiki/Astralis" title="Astralis" target="_blank">Astralis</a>, BIG, <a href="https://en.wikipedia.org/wiki/F.C._Copenhagen#eSports" title="F.C. Copenhagen" target="_blank">North</a>, and <a href="https://en.wikipedia.org/wiki/Virtus.pro" title="Virtus.pro" target="_blank">Virtus.pro</a> were out as Legends after the six teams were knocked out in the New Legends stage.</p>
+		</div>
+		<div class="right">
+			<table id="calendar2">
+		 		<thead><tr><td>‹<td colspan="5"><td>›<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su<tbody>
+		 	</table>
+		 	<script type="text/javascript">
+				Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+				}
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+				}
+			</script>
+	 	</div>
+	 </div>
+	<footer>
+		<span>Gatis Ruskulis</span>
+		<span>D3-2</span>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ELEAGUE Major: Boston 2018</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./libs/calendar.css">
+	<script src="./js/calendar.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./img/logo.jpg" alt="Logo" width="100%">
+		</div>
+		<div class="main_menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./legends.html">Teams</a></li>
+				<li><a href="./final_standings.html">Standings</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+				<li><a href="./contacts.html">Contacts</a></li>
+				<li><a href="./about_us.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<div class="side_menu">
+				<ul>
+					<li><a href="./index.html">Home Page</a></li>
+					<li><a href="./background.html">Background</a></li>
+					<li><a href="./format.html">Format</a></li>
+					<li><a href="./broadcast_talent.html">Broadcast Talent</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<p>On December 13, 2017, the general manager of ELEAGUE Christina Alejandre announced a partially new format designed by Valve and ELEAGUE. The offline qualifier would now be part of the main stage and would be rebranded as the "New Challengers stage." In addition, the teams in this qualifier would also receive in-game stickers. Stickers are items in the game that have the logo of the team and the autographs of the players that those playing the game can put on their weapons. In the grand scheme of things, the format was virtually the same.</p><p>There are four regional qualifiers – Americas, Asia, CIS, and Europe. Two teams from each qualifier move on to the New Challengers stage that will take place in Atlanta from January 19, 2018 to January 22, 2018. Each minor will feature eight teams. Eight teams qualify from the closed qualifier to the minor. Each minor has two groups of four and the top two teams from each group move on to the bracket stage. There, the four teams play in a four team, double elimination, best of three and the top two teams move on to the major.</p><p>The "New Challengers stage," formerly known as the offline qualifier, features sixteen teams: the bottom eight teams from the last major, <a href="https://en.wikipedia.org/wiki/PGL_2017_Krak%C3%B3w_Major_Championship" title="PGL 2017 Kraków Major Championship" target="_blank">PGL 2017 Kraków Major Championship</a>, and the eight teams from the minors. These teams play in a sixteen team, <a href="https://en.wikipedia.org/wiki/Swiss-system_tournament" title="Swiss-system tournament" target="_blank">Swiss-system</a> format. The top eight teams from this stage move on to the next phase of the major.</p><p>The group stage, now known as the "New Legends stage" will feature the sixteen teams that are normally a part of the main stage. These teams include the top eight teams from the PGL Major and the top eight teams from the New Challengers stage. Like the Challengers stage, the Legends stage is a sixteen team, Swiss-system format. The top eight teams from this phase move on to the top eight.</p><p>In the playoffs, now known as the "Champions stage," eight teams will play in a single elimination, best of three bracket. Teams will play until a winner is decided in the finals.</p><h3><span>Map pool</span></h3><p>The map pool will be kept the same as the previous major, even though Valve released the new version of <a href="https://en.wikipedia.org/wiki/Dust_II" title="Dust II" target="_blank">Dust II</a>.</p><strong>Maps</strong>
+				<ul>
+					<li>Cache</li>
+					<li>Cobblestone</li>
+					<li>Inferno</li>
+					<li>Mirage</li>
+					<li>Nuke</li>
+					<li>Overpass</li>
+					<li>Train</li>
+				</ul>
+		</div>
+		<div class="right">
+			<table id="calendar2">
+		 		<thead><tr><td>‹<td colspan="5"><td>›<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su<tbody>
+		 	</table>
+		 	<script type="text/javascript">
+				Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+				}
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+				}
+			</script>
+	 	</div>
+	 </div>
+	<footer>
+		<span>Gatis Ruskulis</span>
+		<span>D3-2</span>
+	</footer>
+</body>
+</html>

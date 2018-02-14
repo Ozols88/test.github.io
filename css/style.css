@@ -1,0 +1,161 @@
+body{
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #010101;
+	color: white;
+	font-size: 12;
+	line-height: 1.5;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.logo{
+	max-width: 1276px;
+}
+
+a{
+	color: white;
+	font-style: none;
+}
+
+.main_menu{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.main_menu>ul{
+	display:flex;
+	justify-content: center;
+	list-style-type: none;
+	background-color: #2A070B;
+	max-width: 1276px;
+	font-size: x-large;
+	flex-wrap: wrap;
+}
+
+.main_menu>ul>li{
+	display: list-item;
+	margin: 0px 5px 0px 5px;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: #2A070B;
+}
+
+.main_menu>ul>li:hover{
+	display: list-item;
+	margin: 0px 5px 0px 5px;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: #010101;
+}
+
+.main_menu>ul>li>a{
+	text-decoration: none;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.side_menu{
+	height: 100%;
+}
+
+.side_menu>ul{
+	list-style-type: none;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+	background-color: #2A070B;
+	height: 100%;
+	font-size: large;
+	text-align: center;
+}
+
+.side_menu>ul>li{
+	padding: 5px 0px 5px 0px;
+}
+
+.side_menu>ul>li:hover{
+	padding: 5px 0px 5px 0px;
+	background-color: #010101;
+}
+
+.side_menu>ul>li>a{
+	text-decoration: none;
+}
+
+.left{
+	text-align: left;
+	max-width: 200px;
+	width: 100%;
+}
+
+.center{
+	text-align: justify;
+	max-width: 836px;
+	width: 100%;
+	margin: 0px 20px 0px 20px;
+	background-color: #2A070B;
+}
+
+.right{
+	max-width: 200px;
+	width: 100%;
+	background-color: #2A070B;
+	margin: 0px;
+}
+
+.table{
+	margin: 10px;
+}
+
+p{
+	margin: 10px;
+}
+
+.video{
+	text-align: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+	background-color: #2A070B;
+	width: 100%;
+	max-width: 1276px;
+	bottom: 0px;
+	margin-top: 20px;
+}
+
+iframe{
+	margin: 10px;
+}
+
+.centerc{
+	display: flex;
+	justify-content: center;
+	max-width: 836px;
+	width: 100%;
+	margin: 0px 20px 0px 20px;
+	background-color: #2A070B;
+	text-align: center;
+}
+
+.table{
+	margin-left:auto; 
+    margin-right:auto;
+    border-spacing: 20px;
+    border: 2px solid white;
+}

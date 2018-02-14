@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ELEAGUE Major: Boston 2018</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./libs/calendar.css">
+	<script src="./js/calendar.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./img/logo.jpg" alt="Logo" width="100%">
+		</div>
+		<div class="main_menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./legends.html">Teams</a></li>
+				<li><a href="./final_standings.html">Standings</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+				<li><a href="./contacts.html">Contacts</a></li>
+				<li><a href="./about_us.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<div class="side_menu">
+				<ul>
+					<li><a href="./challengers_stage.html">Challengers Stage</a></li>
+					<li><a href="./legends_stage.html">Legends Stage</a></li>
+					<li><a href="./champions_stage.html">Champions Stage</a></li>
+					<li><a href="./final_standings.html">Final Standings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<img src="./img/2stage.png" alt="Legends Stage" width="100%">
+		</div>
+		<div class="right">
+			<table id="calendar2">
+		 		<thead><tr><td>‹<td colspan="5"><td>›<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su<tbody>
+		 	</table>
+		 	<script type="text/javascript">
+				Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+				}
+				document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function(){
+					Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+				}
+			</script>
+	 	</div>
+	 </div>
+	<footer>
+		<span>Gatis Ruskulis</span>
+		<span>D3-2</span>
+	</footer>
+</body>
+</html>
